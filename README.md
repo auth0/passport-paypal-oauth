@@ -49,7 +49,7 @@ application:
     app.get('/auth/paypal',
       passport.authenticate('paypal'));
 
-    app.get('/auth/paypal/callback', 
+    app.get('/auth/paypal/callback',
       passport.authenticate('paypal', { failureRedirect: '/login' }),
       function(req, res) {
         // Successful authentication, redirect home.
@@ -71,8 +71,12 @@ For a complete, working example, refer to the [login example](https://github.com
 
   - [Jared Hanson](http://github.com/jaredhanson)
 
+## Author
+
+[Auth0](auth0.com)
+
 ## License
 
-[The MIT License](http://opensource.org/licenses/MIT)
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
 
 Copyright (c) 2012-2013 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
